@@ -1,7 +1,3 @@
-/**
- * TACTICA — Main JS
- * Vanilla JS, без зависимостей.
- */
 (function () {
   'use strict';
 
