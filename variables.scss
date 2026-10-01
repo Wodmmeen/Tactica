@@ -1,0 +1,104 @@
+:root {
+  /* === ЦВЕТА (Светлая база + тактические акценты) === */
+  
+  /* Фоны */
+  --color-bg-primary: #F5F5F4;      /* Основной фон (тёплый серый, не стерильный белый) */
+  --color-bg-surface: #FFFFFF;       /* Карточки, панели, инпуты */
+  --color-bg-elevated: #FAFAF9;      /* Ховер на карточках, выпадашки */
+  --color-bg-dark: #1C1917;          /* Тёмные секции (hero, футер) */
+  
+  /* Границы и разделители */
+  --color-border: #D6D3D1;           /* Основные рамки */
+  --color-border-light: #E7E5E4;     /* Лёгкие разделители */
+  --color-border-strong: #A8A29E;    /* Акцентные рамки (активные состояния) */
+  
+  /* Текст */
+  --color-text-primary: #1C1917;     /* Заголовки, основной текст */
+  --color-text-secondary: #57534E;   /* Описания, метаданные */
+  --color-text-muted: #A8A29E;       /* Плейсхолдеры, disabled */
+  --color-text-inverse: #FAFAF9;     /* Текст на тёмном фоне */
+  
+  /* Акцент (армейский оливковый) */
+  --color-accent: #5D6532;           /* Кнопки, ссылки, активные состояния */
+  --color-accent-hover: #4A5128;     /* Ховер акцента */
+  --color-accent-light: #E8EDD9;     /* Лёгкий фон для бейджей, подсветки */
+  
+  /* Семантические (алерты, скидки) */
+  --color-danger: #DC2626;           /* Скидки, важные CTA, ошибки */
+  --color-danger-light: #FEE2E2;     /* Фон для алертов */
+  --color-success: #16A34A;          /* Наличие, успех */
+  --color-success-light: #DCFCE7;    /* Фон для бейджа "В наличии" */
+  --color-warning: #CA8A04;          /* Мало на складе, предупреждения */
+  
+  /* === ТИПОГРАФИКА === */
+  
+  /* Шрифты */
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+  
+  /* Размеры */
+  --text-xs: 0.75rem;    /* 12px — лейблы, мета */
+  --text-sm: 0.875rem;   /* 14px — описания, вторичный текст */
+  --text-base: 1rem;     /* 16px — основной текст */
+  --text-lg: 1.125rem;   /* 18px — лид-параграф */
+  --text-xl: 1.25rem;    /* 20px — подзаголовки */
+  --text-2xl: 1.5rem;    /* 24px — заголовки карточек */
+  --text-3xl: 1.875rem;  /* 30px — заголовки секций */
+  --text-4xl: 2.25rem;   /* 36px — H1 на внутренних */
+  --text-5xl: 3rem;      /* 48px — Hero H1 */
+  --text-6xl: 3.75rem;   /* 60px — Hero на десктопе */
+  
+  /* Межстрочные */
+  --leading-tight: 1.1;   /* Заголовки */
+  --leading-snug: 1.3;    /* Подзаголовки */
+  --leading-normal: 1.5;  /* Основной текст */
+  --leading-relaxed: 1.7; /* Длинные тексты, описания */
+  
+  /* Трекинг (для тактических заголовков) */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.1em;  /* Для uppercase лейблов */
+  
+  /* === ОТСТУПЫ (8px система) === */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  
+  /* === РАДИУСЫ (минимум, для тактического вида) === */
+  --radius-none: 0;
+  --radius-sm: 2px;     /* Инпуты, мелкие элементы */
+  --radius-md: 4px;     /* Карточки, кнопки */
+  --radius-full: 9999px; /* Только для круглых иконок/аватаров */
+  
+  /* === ТЕНИ (сдержанные, для глубины) === */
+  --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(28, 25, 23, 0.07), 0 2px 4px -2px rgba(28, 25, 23, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(28, 25, 23, 0.08), 0 4px 6px -4px rgba(28, 25, 23, 0.04);
+  
+  /* === ПЕРЕХОДЫ === */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  
+  /* === КОНТЕЙНЕР === */
+  --container-max: 1280px;
+  --container-padding: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  :root { --container-padding: var(--space-6); }
+}
+
+@media (min-width: 1024px) {
+  :root { --container-padding: var(--space-8); }
+}
