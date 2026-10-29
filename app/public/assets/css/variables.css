@@ -330,3 +330,24 @@
   border-radius: var(--radius-sm);
   background-color: var(--color-bg-primary);
 }
+[data-theme="dark"] {
+  --color-bg-primary: #0F0E0D;
+  --color-bg-surface: #1C1917;
+  --color-bg-elevated: #292524;
+  --color-bg-dark: #0A0908;
+  --color-border: #3A3633;
+  --color-border-light: #292524;
+  --color-border-strong: #57534E;
+  --color-text-primary: #FAFAF9;
+  --color-text-secondary: #A8A29E;
+  --color-text-muted: #57534E;
+  --color-text-inverse: #1C1917;
+  --color-accent: #8A9A4E;
+  --color-accent-hover: #A3B35C;
+  --color-accent-light: #2A2F1A;
+  --color-danger: #F87171;
+  --color-danger-light: #3A1F1F;
+  --color-success: #4ADE80;
+  --color-success-light: #1A2F1F;
+  --color-warning: #FACC15;
+}

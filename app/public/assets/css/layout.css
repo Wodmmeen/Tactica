@@ -425,3 +425,15 @@
   background-color: transparent;
   border-color: rgba(255,255,255,0.1);
 }
+.search-modal { position: fixed; inset: 0; z-index: 200; }
+.search-modal[hidden] { display: none; }
+.search-modal__backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); }
+.search-modal__panel { position: relative; background: var(--color-bg-surface); border-bottom: 1px solid var(--color-border); padding-block: var(--space-6); max-height: 80vh; overflow-y: auto; }
+.search-modal__form { display: flex; gap: var(--space-2); align-items: center; margin-bottom: var(--space-6); }
+.search-modal__input { font-size: var(--text-lg); }
+.search-modal__results { display: flex; flex-direction: column; gap: var(--space-2); }
+.search-result { display: grid; grid-template-columns: 56px 1fr auto; gap: var(--space-4); align-items: center; padding: var(--space-3); border: 1px solid var(--color-border-light); background: var(--color-bg-primary); transition: all var(--transition-fast); }
+.search-result:hover { border-color: var(--color-accent); }
+.search-result img { width: 56px; height: 56px; object-fit: cover; background: var(--color-bg-surface); }
+.search-result__title { font-weight: 600; color: var(--color-text-primary); }
+.search-result__price { font-family: var(--font-mono); font-size: var(--text-sm); }

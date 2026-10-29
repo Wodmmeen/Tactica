@@ -19,6 +19,7 @@ $cartCount = 0;
     </nav>
 
     <div class="header__actions">
+      <button class="btn btn--icon" aria-label="Тема" data-action="theme-toggle" style="font-family:var(--font-mono);font-size:10px;font-weight:600;">[LIGHT]</button>
       <button class="btn btn--icon" aria-label="Поиск" data-action="search-toggle">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
@@ -52,9 +53,22 @@ $cartCount = 0;
       <a href="/catalog/airsoft" class="mobile-menu__link">Страйкбол</a>
       <a href="/catalog/accessories" class="mobile-menu__link">Аксессуары</a>
       <a href="/blog" class="mobile-menu__link">Блог</a>
+      <a href="/account/orders" class="mobile-menu__link">Мои заказы</a>
       <a href="/about" class="mobile-menu__link">О нас</a>
       <a href="/contacts" class="mobile-menu__link">Контакты</a>
-      <a href="/account/orders" class="mobile-menu__link">Мои заказы</a>
     </nav>
+  </div>
+
+  <div class="search-modal" id="search-modal" hidden>
+    <div class="search-modal__backdrop" data-action="search-close"></div>
+    <div class="search-modal__panel">
+      <div class="container">
+        <form class="search-modal__form" method="get" action="/catalog" onsubmit="return false;">
+          <input type="text" name="q" class="input search-modal__input" placeholder="Поиск: нож, фонарь, бренд..." autocomplete="off">
+          <button type="button" class="btn btn--ghost" data-action="search-close" aria-label="Закрыть">✕</button>
+        </form>
+        <div class="search-modal__results" id="search-results"></div>
+      </div>
+    </div>
   </div>
 </header>
