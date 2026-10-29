@@ -1,0 +1,23 @@
+# Local by Flywheel
+logs/
+conf/
+app/.envrc
+app/.env
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
+
+# Временное
+*.sql
+*.tmp
+*.cache
