@@ -97,9 +97,11 @@ $related = array_slice($related, 0, 4);
 
   <?php include __DIR__ . '/../partials/footer.php'; ?>
 
+  <script src="/assets/js/theme.js"></script>
   <script src="/assets/js/cart.js"></script>
-  <script src="/assets/js/compare.js"></script>
-  <script src="/assets/js/main.js"></script>
   <script src="/assets/js/favorites.js"></script>
+  <script src="/assets/js/compare.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

@@ -41,7 +41,11 @@
 
   <?php include __DIR__ . '/../partials/footer.php'; ?>
 
+  <script src="/assets/js/theme.js"></script>
   <script src="/assets/js/cart.js"></script>
+  <script src="/assets/js/favorites.js"></script>
+  <script src="/assets/js/compare.js"></script>
+  <script src="/assets/js/search.js"></script>
   <script src="/assets/js/main.js"></script>
   <script>
     (function () {
@@ -115,6 +119,5 @@
       render();
     })();
   </script>
-  <script src="/assets/js/favorites.js"></script>
 </body>
 </html>
