@@ -26,9 +26,14 @@
 - 404, статические страницы (о нас, доставка, гарантия, контакты)
 - Мобильное меню, scroll-reveal
 
+<<<<<<< HEAD
 ## Запуск
 
 ```bash
 git clone <repo>
 cd tactic
 php -S localhost:8000 -t app/public
+=======
+## Демо видео
+https://disk.yandex.ru/d/es82Xx5flDXZPw
+>>>>>>> 7c261739e155e994108f41654d0386b53c90e739
