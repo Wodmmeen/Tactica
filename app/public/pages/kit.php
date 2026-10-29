@@ -38,7 +38,7 @@ foreach ($kitCategories as $cat => $label) {
         Выбери по одному товару из каждой категории — мы посчитаем сумму и покажем вес набора.
       </p>
 
-      <div style="display:grid;grid-template-columns:1.6fr 1fr;gap:32px;align-items:start;">
+        <div class="kit-grid">
         <div>
           <?php foreach ($byCat as $cat => $items): ?>
             <?php if (!$items) continue; ?>

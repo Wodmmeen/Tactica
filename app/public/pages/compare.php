@@ -111,7 +111,10 @@ $baseFields = [
                   </td>
                 <?php endforeach; ?>
               </tr>
+                      <div style="overflow-x:auto;">
+          <table class="table-compare" style="width:100%;border-collapse:collapse;font-family:var(--font-mono);font-size:14px;min-width:600px;">
             </tbody>
+            
           </table>
         </div>
 

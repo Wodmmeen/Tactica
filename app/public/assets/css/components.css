@@ -265,3 +265,14 @@
 .skeleton-card__line--short { width: 60%; }
 .skeleton-card__line--price { width: 40%; height: 20px; }
 .header__cart-count { transition: transform 150ms ease; }
+@media (max-width: 768px) {
+  .hero__title { font-size: var(--text-4xl); }
+  .section__title { font-size: var(--text-3xl); }
+  .hero__actions { flex-direction: column; width: 100%; }
+  .hero__actions .btn { width: 100%; }
+  .header__actions .btn--icon[data-action="theme-toggle"] { display: none; }
+  .product-card__footer { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+  .product-card__footer .btn--icon { width: 100%; }
+  .table-compare th, .table-compare td { padding: 8px !important; font-size: 12px; }
+  .table-compare th img { max-width: 80px; }
+}

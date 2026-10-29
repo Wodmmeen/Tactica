@@ -25,7 +25,7 @@
         <p class="tech-label">[EMPTY] / Корзина пуста. <a href="/catalog" class="section__link">В каталог →</a></p>
       </div>
 
-      <div id="checkout-root" style="display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:start;">
+        <div id="checkout-root" class="checkout-grid">
         <form id="checkout-form" style="display:flex;flex-direction:column;gap:16px;">
           <div>
             <label class="footer__heading" style="color:var(--color-text-muted);display:block;margin-bottom:6px;">Имя и фамилия</label>

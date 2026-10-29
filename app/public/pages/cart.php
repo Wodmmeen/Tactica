@@ -70,8 +70,8 @@
         totalEl.textContent = new Intl.NumberFormat('ru-RU').format(TacticaCart.total()) + ' ₽';
 
         root.innerHTML = items.map((i) => `
-          <div class="cart-item" data-id="${i.id}" style="display:grid;grid-template-columns:80px 1fr auto;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--color-border-light);">
-            <img src="${i.image}" alt="" style="width:80px;height:80px;object-fit:cover;background:var(--color-bg-surface);border:1px solid var(--color-border-light);">
+          <div class="cart-item" data-id="${i.id}">
+            <img src="${i.image}" alt="">
             <div>
               <a href="/product/${i.slug}" style="font-weight:600;color:var(--color-text-primary);">${i.title}</a>
               <p style="font-family:var(--font-mono);font-size:12px;color:var(--color-text-muted);margin-top:4px;">${new Intl.NumberFormat('ru-RU').format(i.price)} ₽ / шт</p>
@@ -84,7 +84,6 @@
             </div>
           </div>
         `).join('');
-      }
 
       root.addEventListener('click', (e) => {
         const row = e.target.closest('.cart-item');

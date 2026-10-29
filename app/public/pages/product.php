@@ -32,7 +32,7 @@ $related = array_slice($related, 0, 4);
     <div class="container">
       <p class="tech-label" style="margin-bottom:16px;">[PRODUCT] / <?= e($product['category_title'] ?? '') ?></p>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;">
+      <div class="product-page-grid">
         <div class="hero__visual" style="aspect-ratio:1/1;">
           <img src="<?= e($product['image']) ?>" alt="<?= e($product['title']) ?>">
         </div>
