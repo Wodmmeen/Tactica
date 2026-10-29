@@ -1,0 +1,1 @@
+2026/10/29 09:33:53 [error] 23564#13016: *24 directory index of "C:/Users/F M/Local Sites/tactic/app/public/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "tactic.local"

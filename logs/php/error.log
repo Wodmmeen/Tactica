@@ -1,0 +1,4 @@
+[29-Oct-2026 03:22:05 UTC] PHP Warning:  Undefined array key "blog" in C:\Users\F M\Local Sites\tactic\app\public\pages\home.php on line 5
+[29-Oct-2026 03:22:05 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\F M\Local Sites\tactic\app\public\pages\home.php on line 99
+[29-Oct-2026 03:22:08 UTC] PHP Warning:  Undefined array key "blog" in C:\Users\F M\Local Sites\tactic\app\public\pages\home.php on line 5
+[29-Oct-2026 03:22:08 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\F M\Local Sites\tactic\app\public\pages\home.php on line 99
