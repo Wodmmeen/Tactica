@@ -22,9 +22,13 @@
       </div>
 
       <div id="fav-root">
-        <p class="tech-label">[LOADING]</p>
+        <div class="products-grid">
+          <div class="skeleton-card"><div class="skeleton skeleton-card__img"></div><div class="skeleton skeleton-card__line"></div><div class="skeleton skeleton-card__line skeleton-card__line--short"></div><div class="skeleton skeleton-card__line skeleton-card__line--price"></div></div>
+          <div class="skeleton-card"><div class="skeleton skeleton-card__img"></div><div class="skeleton skeleton-card__line"></div><div class="skeleton skeleton-card__line skeleton-card__line--short"></div><div class="skeleton skeleton-card__line skeleton-card__line--price"></div></div>
+          <div class="skeleton-card"><div class="skeleton skeleton-card__img"></div><div class="skeleton skeleton-card__line"></div><div class="skeleton skeleton-card__line skeleton-card__line--short"></div><div class="skeleton skeleton-card__line skeleton-card__line--price"></div></div>
+          <div class="skeleton-card"><div class="skeleton skeleton-card__img"></div><div class="skeleton skeleton-card__line"></div><div class="skeleton skeleton-card__line skeleton-card__line--short"></div><div class="skeleton skeleton-card__line skeleton-card__line--price"></div></div>
+        </div>
       </div>
-    </div>
   </main>
 
   <?php include __DIR__ . '/../partials/footer.php'; ?>

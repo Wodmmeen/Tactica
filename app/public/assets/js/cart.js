@@ -1,4 +1,3 @@
-// TACTICA — Cart module (localStorage)
 (function () {
   'use strict';
 
@@ -9,7 +8,6 @@
       const raw = localStorage.getItem(STORAGE_KEY);
       return raw ? JSON.parse(raw) : [];
     } catch (e) {
-      console.error('[cart] read error', e);
       return [];
     }
   }
@@ -67,35 +65,33 @@
 
   function updateBadge() {
     const el = document.querySelector('.header__cart-count');
-    if (el) {
-      const n = count();
-      el.textContent = String(n);
-      el.style.display = n > 0 ? '' : 'none';
-    }
+    if (!el) return;
+    const n = count();
+    el.textContent = String(n);
+    el.style.display = n > 0 ? '' : 'none';
+    el.style.transform = 'scale(1.4)';
+    setTimeout(() => { el.style.transform = 'scale(1)'; }, 150);
   }
 
-  // Автообновление бейджа
   document.addEventListener('cart:updated', updateBadge);
   document.addEventListener('DOMContentLoaded', updateBadge);
 
-  // Делегирование кликов по data-action="add-to-cart"
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('[data-action="add-to-cart"], [data-action="quick-add"]');
     if (!btn || btn.disabled) return;
 
-    const card = btn.closest('[data-product]') || btn.closest('[data-product-id]');
+    const card = btn.closest('[data-product-id]');
     if (!card) return;
 
     const data = card.dataset;
     add({
-      id: data.productId || data.id,
+      id: data.productId,
       title: data.title || '',
       price: data.price || 0,
       image: data.image || '',
       slug: data.slug || '',
     });
 
-    // визуальный фидбек
     const originalBg = btn.style.backgroundColor;
     btn.style.backgroundColor = 'var(--color-success)';
     setTimeout(() => { btn.style.backgroundColor = originalBg; }, 800);

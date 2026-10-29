@@ -21,7 +21,9 @@
       </div>
 
       <div id="cart-root">
-        <p class="tech-label">[LOADING]</p>
+        <div class="skeleton" style="height:80px;margin-bottom:16px;"></div>
+        <div class="skeleton" style="height:80px;margin-bottom:16px;"></div>
+        <div class="skeleton" style="height:80px;"></div>
       </div>
 
       <div id="cart-summary" style="display:none;margin-top:32px;padding-top:24px;border-top:1px solid var(--color-border-light);">

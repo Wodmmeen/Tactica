@@ -22,7 +22,8 @@
       </div>
 
       <div id="orders-root">
-        <p class="tech-label">[LOADING]</p>
+        <div class="skeleton" style="height:150px;margin-bottom:16px;"></div>
+        <div class="skeleton" style="height:150px;"></div>
       </div>
     </div>
   </main>
